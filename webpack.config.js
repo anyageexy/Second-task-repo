@@ -14,7 +14,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'webpack Boilerplate',
-            template: path.resolve(__dirname, './src/main.html'), // шаблон
+            template: path.resolve(__dirname, './src/index.pug'), // шаблон
             filename: 'index.html', // название выходного файла
         }),
         new CleanWebpackPlugin()
@@ -42,6 +42,11 @@ module.exports = {
                 test: /\.(scss|css)$/,
                 use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
             },
+            // pug
+            {
+                test: /\.pug$/,
+                loader: 'pug-loader'
+            }
         ],
     }
 }

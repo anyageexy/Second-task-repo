@@ -1,0 +1,57 @@
+.color-set{
+  width: 282px;
+  height: 610px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.color-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  .color-square{
+    height: 70px;
+    width: 70px;
+  } 
+  .color-text{
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 56px;
+    width: 171px;
+    text-align: left;
+    color: #1F2041;
+    p{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .color-text-name{
+      font-weight: bold;
+    }
+  }
+}
+
+.i1{
+  background-color: rgba(31, 32, 65, 1);
+}
+.i2{
+  background-color: rgba(31, 32, 65, 0.75);
+}
+.i3{
+  background-color: rgba(31, 32, 65, 0.5);
+}
+.i4{
+  background-color: rgba(31, 32, 65, 0.25);
+}
+.i5{
+  background-color: rgba(31, 32, 65, 0.05);
+}
+.i6{
+  background-color: rgba(188, 156, 255, 1);
+}
+.i7{
+  background-color: rgba(111, 207, 151, 1);
+}

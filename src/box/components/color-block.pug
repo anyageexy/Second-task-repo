@@ -1,0 +1,15 @@
+mixin color-item(name, code, item)
+  .color-container
+    .color-square(class=item)
+    .color-text
+      p.color-text-name= name
+      p.color-text-code= code
+.color-set
+  +color-item("Dark Shade 100%","#1F2041","i1")
+  +color-item("Dark Shade 75%","#1F2041","i2")
+  +color-item("Dark Shade 50%","#1F2041","i3")
+  +color-item("Dark Shade 25%","#1F2041","i4")
+  +color-item("Dark Shade 5%","#1F2041","i5")
+  +color-item("Purple","#BC9CFF","i6")
+  +color-item("Green","#6FCF97","i7")
+ 

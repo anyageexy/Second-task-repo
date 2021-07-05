@@ -1,0 +1,19 @@
+mixin text-types(font_size, weight, name, desc)
+  if weight == "b" 
+    .text-types-container(style=`font-weight: bold; font-size: ${font_size}`)
+      .text-name-container
+        p.text-name=  name
+      .text-desc-container
+        p.text-desc=  desc
+  else 
+    .text-types-container(style=`font-weight: regular; font-size: ${font_size}`)
+      .text-name-container
+        p.text-name=  name
+      .text-desc-container
+        p.text-desc=  desc
+
+.text-types-set
+  +text-types("24px","b", "h1", "This one is the sub-section or widget title")
+  +text-types("19px","b", "h2", "Next one is the item title inside widgets")
+  +text-types("12px","b", "h3", "This is a label or CTA text")
+  +text-types("14px","r", "body", "This is the bo dy text which is used for most of the design, like paragraphs, lists, etc.")

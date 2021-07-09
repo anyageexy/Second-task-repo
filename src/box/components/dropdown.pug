@@ -1,9 +1,19 @@
-mixin dropdown
+mixin dropdown(head, item_1, item_2, item_3)
   .dpordown-container
     .dropdown-head 
-      .dropdown-head-text 
+      .dropdown-head-text
+        p= head 
       .dropdown-head-arrow
     .dropdown-list
       .dropdown-list-item-1
+        .list-title
+          p= item_1
+        .list-counter
       .dropdown-list-item-2
+        .list-title
+          p= item_2
+        .list-counter
       .dropdown-list-item-3
+        .list-title
+          p= item_3
+        .list-counter

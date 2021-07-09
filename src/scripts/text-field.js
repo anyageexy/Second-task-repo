@@ -1,11 +1,3 @@
-// function valueFocus(){
-//   document.getElementById('text-field').value = "First Name Only";
-// }
-
-// function valueBlur(){
-//   document.getElementById('text-field').value = "";
-// }
-
 document.addEventListener("click", (evt) => {
   const flyoutElement = document.getElementById("text-field");
   let targetElement = evt.target; // clicked element

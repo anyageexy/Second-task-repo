@@ -1,0 +1,16 @@
+.dpordown-container{
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-head {
+  display: flex;
+  flex-direction: row;
+}
+.dropdown-list{
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-list > div{
+  display: flex;
+  flex-direction: row;
+}

@@ -1,16 +1,56 @@
-.dpordown-container{
+//СТИЛИ ДЛЯ РЕАЛИЗАЦИИ РАСКРЫТИЯ СПИСКА С ПОМОЩЬЮ CSS
+
+// .dpordown-container{
+//   display: flex;
+//   flex-direction: column;
+//   position: relative;
+//   &:hover{
+//     .dropdown-list {
+//       visibility: visible;
+//       opacity: 1;
+//     }
+//   }
+// }
+// .dropdown-head {
+//   display: flex;
+//   flex-direction: row;
+// }
+// .dropdown-head:after {
+//   content: "\2304";
+// }
+// .dropdown-list{
+//   display: flex;
+//   flex-direction: column;
+//   visibility: hidden;
+//   opacity: 0;
+//   z-index: 5;
+//   position: absolute;
+//   padding-top: 26px;
+// }
+// .dropdown-list > div{
+//   display: flex;
+//   flex-direction: row;
+// }
+
+.dropdown-container{
   display: flex;
   flex-direction: column;
-}
-.dropdown-head {
-  display: flex;
-  flex-direction: row;
+  position: relative;
 }
 .dropdown-list{
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  // visibility: hidden;
+  // opacity: 0;
+  // z-index: 5;
+  // position: absolute;
+  //padding-top: 26px;
+  display: none;
+  //visibility: hidden;
+  position: absolute;
 }
-.dropdown-list > div{
-  display: flex;
-  flex-direction: row;
+
+.show {
+  display: block;
+  //visibility: visible;
 }

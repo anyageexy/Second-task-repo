@@ -5,6 +5,8 @@
 // }
 
 function myFunction() {
-  var menu = document.querySelector('.dropdown-list') // Using a class instead, see note below.
+  var menu = document.querySelector('.dropdown-list'); // Using a class instead, see note below.
+  var head = document.querySelector('.dropdown-head');
   menu.classList.toggle('show');
+  head.classList.toggle('dropdown-head-show');
 }

@@ -9,4 +9,5 @@ function myFunction() {
   var head = document.querySelector('.dropdown-head');
   menu.classList.toggle('show');
   head.classList.toggle('dropdown-head-show');
+ 
 }

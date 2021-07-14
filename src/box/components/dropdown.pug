@@ -1,9 +1,9 @@
-mixin dropdown(head, item_1, item_2, item_3)
-  .dpordown-container
+mixin dropdown(head, item_1, item_2, item_3, col_1, col_2, col_3)
+  .dropdown-container
     .dropdown-head(onclick='myFunction()')
 
       .dropdown-head-text
-        p= head 
+        p.head-text= head 
       .dropdown-head-arrow
 
 
@@ -16,7 +16,7 @@ mixin dropdown(head, item_1, item_2, item_3)
           .btn-decrement
             span.span-decrement &#8722;
           .label-count
-            span.span-count 0
+            span.span-count= col_1
           .btn-increment
             span.span-increment &#43;
 
@@ -27,7 +27,7 @@ mixin dropdown(head, item_1, item_2, item_3)
           .btn-decrement
             span.span-decrement &#8722;
           .label-count
-            span.span-count 0
+            span.span-count= col_2
           .btn-increment
             span.span-increment &#43;
         
@@ -38,6 +38,6 @@ mixin dropdown(head, item_1, item_2, item_3)
           .btn-decrement
             span.span-decrement &#8722;
           .label-count
-            span.span-count 0
+            span.span-count= col_3
           .btn-increment
             span.span-increment &#43;

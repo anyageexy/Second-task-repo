@@ -6,7 +6,7 @@
 .dropdown-head {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px 4px 4px 4px;
-  width: 320px;
+  width: 266px;
   height: 44px;
   display: flex;
   flex-direction: row;
@@ -19,8 +19,8 @@
 .dropdown-list{
   display: none;
   position: absolute;
-  width: 320px;
-  height: 159px;
+  width: 266px;
+  height: 119px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
@@ -28,9 +28,9 @@
 .dropdown-list > div{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     line-height: 18px;
     padding-left: 14px;
-    height: 44px;
     color:rgba(31, 32, 65, 1);
     font-weight: bold;
     align-items:center;
@@ -38,7 +38,11 @@
 
 //--стили при раскрытии списка--//
 .show {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 7px;
+
 }
 .dropdown-head-show{
   border: 1px solid rgba(31, 32, 65, 0.5);

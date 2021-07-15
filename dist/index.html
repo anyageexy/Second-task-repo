@@ -44,47 +44,60 @@ function myFunction() {
   var head = document.querySelector('.dropdown-head');
   menu.classList.toggle('show');
   head.classList.toggle('dropdown-head-show');
- 
+}
+
+function main_counter(){
+  var head = document.querySelector('.head-text');
+  var counter_1 = document.querySelector('.span-count_1').innerHTML;
+  var counter_2 = document.querySelector('.span-count_2').innerHTML;
+  var counter_3 = document.querySelector('.span-count_3').innerHTML;
+  head.innerHTML = counter_1 + " спален, " + counter_2 + " кроватей, " + counter_3 + " ванных комнат";
 }
 
 function item_1_decrement(){
   var counter_1 = document.querySelector('.span-count_1');
   if(counter_1.innerHTML > 0){
     counter_1.innerHTML -= 1;
-  }
+  };
+  main_counter();
 }
 
 function item_1_increment(){
   var counter_1 = document.querySelector('.span-count_1');
   if(counter_1.innerHTML < 100){
     counter_1.innerHTML = parseInt(parseInt(counter_1.innerHTML)+1);
-  }
+  };
+  main_counter();
 }
 
 function item_2_decrement(){
   var counter_2 = document.querySelector('.span-count_2');
   if(counter_2.innerHTML > 0){
     counter_2.innerHTML -= 1;
-  }
+  };
+  main_counter();
 }
 
 function item_2_increment(){
   var counter_2 = document.querySelector('.span-count_2');
   if(counter_2.innerHTML < 100){
     counter_2.innerHTML = parseInt(parseInt(counter_2.innerHTML)+1);
-  }
+  };
+  main_counter();
 }
 
 function item_3_decrement(){
   var counter_3 = document.querySelector('.span-count_3');
   if(counter_3.innerHTML > 0){
     counter_3.innerHTML -= 1;
-  }
+  };
+  main_counter();
 }
 
 function item_3_increment(){
   var counter_3 = document.querySelector('.span-count_3');
   if(counter_3.innerHTML < 100){
     counter_3.innerHTML = parseInt(parseInt(counter_3.innerHTML)+1);
-  }
+  };
+  main_counter();
 }</script><div class="text-field-container"> <input class="text-field" type="text" placeholder="email" id="text-field"></div><div class="dropdown-wrapper"><div class="dropdown-container"><div class="dropdown-head"><div class="dropdown-head-text"><p class="head-text">2 спальни, 2 кровати...</p></div><div class="dropdown-head-arrow-container"><div class="dropdown-head-arrow" onclick="myFunction()"></div></div></div><div class="dropdown-list" id="dropdown-list"> <div class="dropdown-list-item-1"><div class="list-title"><p>Спальни</p></div><div class="list-counter"><div class="btn-decrement" onclick="item_1_decrement()"><span class="span-decrement">&#8722;</span></div><div class="label-count"><span class="span-count span-count_1">2</span></div><div class="btn-increment" onclick="item_1_increment()"><span class="span-increment">&#43;</span></div></div></div><div class="dropdown-list-item-2"><div class="list-title"><p>Кровати</p></div><div class="list-counter"><div class="btn-decrement" onclick="item_2_decrement()"><span class="span-decrement">&#8722;</span></div><div class="label-count"><span class="span-count span-count_2">2</span></div><div class="btn-increment" onclick="item_2_increment()"><span class="span-increment">&#43;</span></div></div></div><div class="dropdown-list-item-3"><div class="list-title"><p>Ванные комнаты</p></div><div class="list-counter"><div class="btn-decrement" onclick="item_3_decrement()"><span class="span-decrement">&#8722;</span></div><div class="label-count"><span class="span-count span-count_3">0</span></div><div class="btn-increment" onclick="item_3_increment()"><span class="span-increment">&#43;</span></div></div></div></div></div></div><div class="main-container"> <div class="color-set"><div class="color-container"><div class="color-square i1"></div><div class="color-text"><p class="color-text-name">Dark Shade 100%</p><p class="color-text-code">#1F2041</p></div></div><div class="color-container"><div class="color-square i2"></div><div class="color-text"><p class="color-text-name">Dark Shade 75%</p><p class="color-text-code">#1F2041</p></div></div><div class="color-container"><div class="color-square i3"></div><div class="color-text"><p class="color-text-name">Dark Shade 50%</p><p class="color-text-code">#1F2041</p></div></div><div class="color-container"><div class="color-square i4"></div><div class="color-text"><p class="color-text-name">Dark Shade 25%</p><p class="color-text-code">#1F2041</p></div></div><div class="color-container"><div class="color-square i5"></div><div class="color-text"><p class="color-text-name">Dark Shade 5%</p><p class="color-text-code">#1F2041</p></div></div><div class="color-container"><div class="color-square i6"></div><div class="color-text"><p class="color-text-name">Purple</p><p class="color-text-code">#BC9CFF</p></div></div><div class="color-container"><div class="color-square i7"></div><div class="color-text"><p class="color-text-name">Green</p><p class="color-text-code">#6FCF97</p></div></div></div><div class="text-types-set"><div class="text-types-container" style="font-weight: bold; font-size: 24px"><div class="text-name-container"><p class="text-name">h1</p></div><div class="text-desc-container"><p class="text-desc">This one is the sub-section or widget title</p></div></div><div class="text-types-container" style="font-weight: bold; font-size: 19px"><div class="text-name-container"><p class="text-name">h2</p></div><div class="text-desc-container"><p class="text-desc">Next one is the item title inside widgets</p></div></div><div class="text-types-container" style="font-weight: bold; font-size: 12px"><div class="text-name-container"><p class="text-name">h3</p></div><div class="text-desc-container"><p class="text-desc">This is a label or CTA text</p></div></div><div class="text-types-container" style="font-weight: regular; font-size: 14px"><div class="text-name-container"><p class="text-name">body</p></div><div class="text-desc-container"><p class="text-desc">This is the bo dy text which is used for most of the design, like paragraphs, lists, etc.</p></div></div></div></div></body>

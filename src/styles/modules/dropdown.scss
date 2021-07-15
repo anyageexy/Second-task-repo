@@ -1,8 +1,4 @@
-// .dropdown-container{
-//   display: flex;
-//   flex-direction: column;
-//   position: relative;
-// }
+
 .dropdown-head {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px 4px 4px 4px;
@@ -13,7 +9,7 @@
   justify-content: space-between;
   align-items:center;
   padding-left: 14px;
-  
+  font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
   line-height: 18px;
   background-color: #fff;
@@ -96,7 +92,7 @@
   padding-right: 15px;
 }
 .dropdown-head-arrow{
-  border: solid black;
+  border: solid rgba(31, 32, 65, 0.75);
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;

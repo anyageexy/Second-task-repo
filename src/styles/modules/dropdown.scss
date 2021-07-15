@@ -1,4 +1,4 @@
-
+//-------main components styles-----//
 .dropdown-head {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px 4px 4px 4px;
@@ -34,6 +34,17 @@
     font-weight: bold;
     align-items:center;
   }
+.dropdown-head-arrow-container{
+  height: 30px;
+  width: 45px;
+  display: flex;
+  justify-content:flex-end;
+  flex-direction: row;
+  align-items: center;
+  cursor:pointer;
+  padding-right: 15px;
+}
+
 
 //--стили при раскрытии списка--//
 .show {
@@ -50,6 +61,9 @@
   border: 1px solid rgba(31, 32, 65, 0.5);
   border-radius: 4px 4px 0px 0px;
 }
+
+
+//---small clickable elements-------//
 .list-counter{
   display: flex;
   flex-direction: row;
@@ -65,6 +79,17 @@
   justify-content: center;
   color:rgba(31, 32, 65, 0.25);
 }
+.dropdown-head-arrow{
+  border: solid rgba(31, 32, 65, 0.75);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);  
+}
+
+
+///-----small elements----//
 .label-count{
   width: 30px;
   height: 30px;
@@ -81,24 +106,6 @@
 }
 
 
-.dropdown-head-arrow-container{
-  height: 30px;
-  width: 45px;
-  display: flex;
-  justify-content:flex-end;
-  flex-direction: row;
-  align-items: center;
-  cursor:pointer;
-  padding-right: 15px;
-}
-.dropdown-head-arrow{
-  border: solid rgba(31, 32, 65, 0.75);
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);  
-}
 
 
 

@@ -1,10 +1,11 @@
 mixin dropdown(head, item_1, item_2, item_3, col_1, col_2, col_3)
   .dropdown-container
-    .dropdown-head(onclick='myFunction()')
+    .dropdown-head
 
       .dropdown-head-text
         p.head-text= head 
-      .dropdown-head-arrow
+      .dropdown-head-arrow-container
+        .dropdown-head-arrow(onclick='myFunction()')
 
 
     #dropdown-list.dropdown-list 

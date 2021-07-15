@@ -25,20 +25,20 @@ mixin dropdown(head, item_1, item_2, item_3, col_1, col_2, col_3)
         .list-title
           p= item_2
         .list-counter
-          .btn-decrement
+          .btn-decrement(onclick='item_2_decrement()')
             span.span-decrement &#8722;
           .label-count
-            span.span-count= col_2
-          .btn-increment
+            span.span-count.span-count_2= col_2
+          .btn-increment(onclick='item_2_increment()')
             span.span-increment &#43;
         
       .dropdown-list-item-3
         .list-title
           p= item_3
         .list-counter
-          .btn-decrement
+          .btn-decrement(onclick='item_3_decrement()')
             span.span-decrement &#8722;
           .label-count
-            span.span-count= col_3
-          .btn-increment
+            span.span-count.span-count_3= col_3
+          .btn-increment(onclick='item_3_increment()')
             span.span-increment &#43;

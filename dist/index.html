@@ -52,6 +52,9 @@ function main_counter(){
   var counter_2 = document.querySelector('.span-count_2').innerHTML;
   var counter_3 = document.querySelector('.span-count_3').innerHTML;
   head.innerHTML = counter_1 + " спален, " + counter_2 + " кроватей, " + counter_3 + " ванных комнат";
+  if(head.innerHTML.length > 20){
+    head.innerHTML = head.innerHTML.substring(0, 20) + "...";
+  }
 }
 
 function item_1_decrement(){

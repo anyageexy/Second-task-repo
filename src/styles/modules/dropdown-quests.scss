@@ -1,5 +1,5 @@
 //-------main components styles-----//
-.dropdown-head {
+.dropdown-quests-head {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px 4px 4px 4px;
   width: 266px;
@@ -15,7 +15,7 @@
   background-color: #fff;
  
 }
-.dropdown-list{
+.dropdown-quests-list {
   display: none;
   position: absolute;
   width: 266px;
@@ -25,7 +25,7 @@
   background-color: #fff;
  
 }
-.dropdown-list > div{
+.dropdown-quests-list > div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,7 +35,7 @@
     font-weight: bold;
     align-items:center;
   }
-.dropdown-head-arrow-container{
+.dropdown-quests-head-arrow-container{
   height: 30px;
   width: 45px;
   display: flex;
@@ -48,8 +48,7 @@
 
 
 //--стили при раскрытии списка--//
-.show {
-  z-index: 10;
+.quests-show {
   border: 1px solid rgba(31, 32, 65, 0.5);
   display: flex;
   flex-direction: column;
@@ -59,18 +58,18 @@
   4px 4px 6px -1px rgba(31, 32, 65, 0.05), 
   -4px 4px 6px -1px rgba(31, 32, 65, 0.05);
 }
-.dropdown-head-show{
+.dropdown-quests-head-show{
   border: 1px solid rgba(31, 32, 65, 0.5);
   border-radius: 4px 4px 0px 0px;
 }
 
 
 //---small clickable elements-------//
-.list-counter{
+.quests-list-counter{
   display: flex;
   flex-direction: row;
 }
-.btn-decrement, .btn-increment{
+.quests-btn-decrement, .quests-btn-increment{
   width: 30px;
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -83,7 +82,7 @@
   cursor:pointer;
   user-select: none;
 }
-.dropdown-head-arrow{
+.dropdown-quests-head-arrow{
   border: solid rgba(31, 32, 65, 0.75);
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -94,7 +93,7 @@
 
 
 ///-----small elements----//
-.label-count{
+.quests-label-count{
   width: 30px;
   height: 30px;
   display: flex;
@@ -104,49 +103,7 @@
   font-size: 12px;
   font-weight: bold;
 }
-.list-title{
+.quests-list-title{
   font-size: 12px;
   font-weight: bold;
 }
-
-
-
-
-
-
-
-//----------------------СТИЛИ ДЛЯ РЕАЛИЗАЦИИ РАСКРЫТИЯ СПИСКА С ПОМОЩЬЮ CSS---------------------------//
-
-// .dpordown-container{
-//   display: flex;
-//   flex-direction: column;
-//   position: relative;
-//   &:hover{
-//     .dropdown-list {
-//       visibility: visible;
-//       opacity: 1;
-//     }
-//   }
-// }
-// .dropdown-head {
-//   display: flex;
-//   flex-direction: row;
-// }
-// .dropdown-head:after {
-//   content: "\2304";
-// }
-// .dropdown-list{
-//   display: flex;
-//   flex-direction: column;
-//   visibility: hidden;
-//   opacity: 0;
-//   z-index: 5;
-//   position: absolute;
-//   padding-top: 26px;
-// }
-// .dropdown-list > div{
-//   display: flex;
-//   flex-direction: row;
-// }
-
-//------------------------------------------------------------------------------------------------------------//

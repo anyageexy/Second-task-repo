@@ -5,7 +5,7 @@
 // }
 
 function myFunction_quests() {
-  var menu = document.querySelector('.dropdown-quests-list-container'); // Using a class instead, see note below.
+  var menu = document.querySelector('.dropdown-quests-list'); // Using a class instead, see note below.
   var head = document.querySelector('.dropdown-quests-head');
   menu.classList.toggle('quests-show');
   head.classList.toggle('dropdown-quests-head-text');

@@ -9,36 +9,41 @@ mixin dropdown-quests(head, item_1, item_2, item_3, col_1, col_2, col_3)
 
 
     #dropdown-quests-list.dropdown-quests-list 
+      .dropdown-quests-list-container
 
-      .dropdown-quests-list-item-1
-        .quests-list-title
-          p= item_1
-        .quests-list-counter
-          .quests-btn-decrement(onclick='quests_item_1_decrement()')
-            span.span-decrement &#8722;
-          .quests-label-count
-            span.quests-span-count.quests-span-count_1= col_1
-          .quests-btn-increment(onclick='quests_item_1_increment()')
-            span.span-increment &#43;
+        .dropdown-quests-list-item-1
+          .quests-list-title
+            p= item_1
+          .quests-list-counter
+            .quests-btn-decrement(onclick='quests_item_1_decrement()')
+              span.span-decrement &#8722;
+            .quests-label-count
+              span.quests-span-count.quests-span-count_1= col_1
+            .quests-btn-increment(onclick='quests_item_1_increment()')
+              span.span-increment &#43;
 
-      .dropdown-quests-list-item-2
-        .quests-list-title
-          p= item_2
-        .quests-list-counter
-          .quests-btn-decrement(onclick='quests_item_2_decrement()')
-            span.span-decrement &#8722;
-          .quests-label-count
-            span.quests-span-count.quests-span-count_2= col_2
-          .quests-btn-increment(onclick='quests_item_2_increment()')
-            span.span-increment &#43;
-        
-      .dropdown-quests-list-item-3
-        .quests-list-title
-          p= item_3
-        .quests-list-counter
-          .quests-btn-decrement(onclick='quests_item_3_decrement()')
-            span.span-decrement &#8722;
-          .quests-label-count
-            span.quests-span-count.quests-span-count_3= col_3
-          .quests-btn-increment(onclick='quests_item_3_increment()')
-            span.span-increment &#43;
+        .dropdown-quests-list-item-2
+          .quests-list-title
+            p= item_2
+          .quests-list-counter
+            .quests-btn-decrement(onclick='quests_item_2_decrement()')
+              span.span-decrement &#8722;
+            .quests-label-count
+              span.quests-span-count.quests-span-count_2= col_2
+            .quests-btn-increment(onclick='quests_item_2_increment()')
+              span.span-increment &#43;
+          
+        .dropdown-quests-list-item-3
+          .quests-list-title
+            p= item_3
+          .quests-list-counter
+            .quests-btn-decrement(onclick='quests_item_3_decrement()')
+              span.span-decrement &#8722;
+            .quests-label-count
+              span.quests-span-count.quests-span-count_3= col_3
+            .quests-btn-increment(onclick='quests_item_3_increment()')
+              span.span-increment &#43;
+
+      .dropdown-quests-buttons-container
+        button.btn-clear= очистить 
+        button.btn-apply= применить

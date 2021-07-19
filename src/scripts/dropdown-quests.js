@@ -12,7 +12,13 @@ function myFunction_quests() {
 }
 function btn_clear_show(){
   var btn = document.querySelector('.btn-clear');
-  btn.classList.toggle('.btn-clear-show');
+  btn.classList.add('btn-clear-show');
+}
+function btn_clear_hidden(){
+  var btn = document.querySelector('.btn-clear');
+  btn.classList.remove('btn-clear-show');
+  var head = document.querySelector('.dropdown-quests-head');
+  head.innerHTML = "Сколько гостей";
 }
 function main_counter_quests(){
   var head = document.querySelector('.quests-head-text');

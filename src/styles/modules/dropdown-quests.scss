@@ -139,5 +139,8 @@
 }
 
 .btn-clear{
-  display: none;
+  visibility: hidden;//спрячет элемент
+}
+.btn-clear-show{
+  visibility:visible;
 }

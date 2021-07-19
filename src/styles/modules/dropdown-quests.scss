@@ -13,9 +13,9 @@
   color: rgba(31, 32, 65, 0.75);
   line-height: 18px;
   background-color: #fff;
- 
 }
 .dropdown-quests-list {
+  text-transform: uppercase;
   display: none;
   position: absolute;
   width: 320px;
@@ -30,20 +30,23 @@
   flex-direction: column;
 }
 .dropdown-quests-list > div{
+  line-height: 18px;
+  padding-left: 14px;
+}
+.dropdown-quests-list-container{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  line-height: 18px;
-  padding-left: 14px;
+  align-items:center;
   color:rgba(31, 32, 65, 1);
   font-weight: bold;
-  align-items:center;
 }
 .dropdown-quests-list-container > div{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  
 }
 .dropdown-quests-head-arrow-container{
   height: 30px;
@@ -55,7 +58,11 @@
   cursor:pointer;
   padding-right: 15px;
 }
-
+.dropdown-quests-buttons-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
 
 //--стили при раскрытии списка--//
 .quests-show {//для списка
@@ -126,4 +133,5 @@
   color: rgba(188, 156, 255, 1);
   outline: none;
   border: none;
+  text-transform: uppercase;
 }

@@ -5,7 +5,7 @@ mixin dropdown-quests(head, item_1, item_2, item_3, col_1, col_2, col_3)
       .dropdown-quests-head-text
         p.quests-head-text= head 
       .dropdown-quests-head-arrow-container
-        .dropdown-quests-head-arrow(onclick='myFunction_quests()')
+        .dropdown-quests-head-arrow(onclick='my_Function_quests()')
 
 
     #dropdown-quests-list.dropdown-quests-list 
@@ -42,4 +42,4 @@ mixin dropdown-quests(head, item_1, item_2, item_3, col_1, col_2, col_3)
               span.span-increment &#43;
       .dropdown-quests-buttons-container
         button.btn-clear(onclick='btn_clear_hidden()') очистить 
-        button.btn-apply применить
+        button.btn-apply(onclick='main_counter_quests()') применить

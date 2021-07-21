@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "core-js": "3.3",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "jquery.maskedinput": "^1.4.1"
   }
 }

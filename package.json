@@ -25,7 +25,9 @@
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.6",
+    "expose-loader": "^3.0.0",
     "html-webpack-plugin": "^5.3.2",
+    "jquery": "^3.6.0",
     "node-sass": "^6.0.1",
     "postcss": "^8.3.5",
     "postcss-loader": "^6.1.0",
@@ -41,7 +43,6 @@
   },
   "dependencies": {
     "core-js": "3.3",
-    "jquery": "^3.6.0",
-    "jquery.maskedinput": "^1.4.1"
+    "inputmask": "^5.0.6"
   }
 }

@@ -1,3 +1,5 @@
-import './styles/main.scss'
+import './styles/main.scss';
 
-import * as $ from 'jquery'
+
+var Inputmask = require('inputmask');
+

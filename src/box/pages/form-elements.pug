@@ -2,12 +2,15 @@ include ../components/text-field.pug
 include ../components/dropdown.pug
 include ../components/dropdown-quests.pug
 include ../components/masked-text-field.pug
+include ../components/checkbox-button.pug
 
 script 
   include ../../scripts/text-field.js
   include ../../scripts/dropdown.js
   include ../../scripts/dropdown-quests.js
   include ../../scripts/masked-text-field.js 
+  include ../../scripts/masked-text-field.js
+
 .text-field-container 
   +text-field 
 
@@ -15,3 +18,4 @@ script
   +dropdown("2 спальни, 2 кровати...","Спальни","Кровати","Ванные комнаты","2","2","0")
   +dropdown-quests("Сколько гостей","Взрослые","Дети","Младенцы","0","0","0")
   +masked-text-field
+  +checkbox-button 

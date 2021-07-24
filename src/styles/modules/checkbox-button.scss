@@ -40,12 +40,12 @@
   &:checked + label:after {
     content: '';
     position: absolute;
-    left: 5px;
-    top: 9px;
+    left: 6px;
+    top: 4px;
     // background: linear-gradient(to bottom, rgba(188, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
     background: transparent;
-    width: 6px;
-    height: 8px;
+    width: 8px;
+    height: 6px;
     // box-shadow: 
     //   2px 0 0  black,
     //   4px 0 0  black,
@@ -61,6 +61,12 @@
 
     // transform: rotate(45deg);
     // transform: scale(-1, 1);
-    transform:rotateX(225deg);
+    // transform:rotateX(225deg);
+    -webkit-transform: rotateY(
+      180deg
+    );
+    transform: rotate(
+      314deg
+    );
   }
 }

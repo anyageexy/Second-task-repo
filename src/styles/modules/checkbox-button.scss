@@ -42,8 +42,8 @@
   &:checked + label:after {
     content: '';
     position: absolute;
-    left: 6px;
-    top: 4px;
+    left: 7px;
+    top: 5px;
     background: transparent;
     width: 8px;
     height: 6px;
@@ -59,3 +59,8 @@
     );
   }
 }
+.checkbox-button-label{
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 14px;
+}
+

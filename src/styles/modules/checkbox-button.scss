@@ -18,6 +18,7 @@
     height: 20px;
     background: rgba(255, 255, 255, 1);
     border: 2px solid rgba(188, 156, 255, 1);
+    border-radius: 4px;
   }
 
   // Box checked
@@ -43,26 +44,13 @@
     position: absolute;
     left: 6px;
     top: 4px;
-    // background: linear-gradient(to bottom, rgba(188, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
     background: transparent;
     width: 8px;
     height: 6px;
-    // box-shadow: 
-    //   2px 0 0  black,
-    //   4px 0 0  black,
-    //   4px -2px 0  black,
-    //   4px -4px 0  black,
-    //   4px -6px 0  black,
-    //   4px -8px 0  black;
-   
     border-bottom: 2px solid;
     border-left: 2px solid;
     border-image-source: conic-gradient(rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
     border-image-slice: 1;
-
-    // transform: rotate(45deg);
-    // transform: scale(-1, 1);
-    // transform:rotateX(225deg);
     -webkit-transform: rotateY(
       180deg
     );

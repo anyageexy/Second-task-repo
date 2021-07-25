@@ -10,6 +10,7 @@ script
   include ../../scripts/dropdown-quests.js
   include ../../scripts/masked-text-field.js 
   include ../../scripts/masked-text-field.js
+  include ../../scripts/checkbox-button.js
 
 .text-field-container 
   +text-field 
@@ -18,4 +19,6 @@ script
   +dropdown("2 спальни, 2 кровати...","Спальни","Кровати","Ванные комнаты","2","2","0")
   +dropdown-quests("Сколько гостей","Взрослые","Дети","Младенцы","0","0","0")
   +masked-text-field
-  +checkbox-button("азащабд")
+  +checkbox-button("Можно курить",1)
+  +checkbox-button("Можно с питомцами",2)
+  +checkbox-button("Можно пригласить гостей (до 10 человек)",3)

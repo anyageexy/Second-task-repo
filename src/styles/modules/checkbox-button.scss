@@ -92,7 +92,7 @@ input[type="radio"]:checked + label,
 input[type="radio"]:not(:checked) + label {
     display: inline-block;
     position: relative;
-    padding-left: 28px;
+    padding-left: 30px;
     line-height: 20px;
     cursor: pointer;
 }
@@ -136,13 +136,13 @@ input[type="radio"]:not(:checked) + label:after {
 
 input[type="checkbox"]:checked + label:after, 
 input[type="checkbox"]:not(:checked) + label:after {
-    left: 3px;
+    left: 5px;
     top: 4px;
-    width: 10px;
-    height: 5px;
+    width: 8px;
+    height: 6px;
     border-radius: 1px;
-    border-left: 4px solid rgba(188, 156, 255, 1);
-    border-bottom: 4px solid rgba(188, 156, 255, 1);
+    border-left: 2px solid rgba(188, 156, 255, 1);
+    border-bottom: 2px solid rgba(188, 156, 255, 1);
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -168,4 +168,9 @@ input[type="radio"]:not(:checked) + label:after {
 input[type="checkbox"]:checked + label:after, 
 input[type="radio"]:checked + label:after {
     opacity: 1;
+}
+.checkbox-label{
+  max-width: 222px;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 14px;
 }

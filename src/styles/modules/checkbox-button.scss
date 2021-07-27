@@ -107,19 +107,20 @@ input[type="radio"]:not(:checked) + label:before {
     top: 0px;
     width: 18px;
     height: 18px;
-    border: 1px solid #dddddd;
+    //border: 1px solid #dddddd;
+    border: 1px solid rgba(188, 156, 255, 1);
     background-color: #ffffff;
 }
 
 input[type="checkbox"]:checked + label:before, 
 input[type="checkbox"]:not(:checked) + label:before {
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
-input[type="radio"]:checked + label:before, 
-input[type="radio"]:not(:checked) + label:before {
-    border-radius: 100%;
-}
+// input[type="radio"]:checked + label:before, 
+// input[type="radio"]:not(:checked) + label:before {
+//     border-radius: 100%;
+// }
 
 input[type="checkbox"]:checked + label:after, 
 input[type="checkbox"]:not(:checked) + label:after, 
@@ -149,15 +150,15 @@ input[type="checkbox"]:not(:checked) + label:after {
     transform: rotate(-45deg);
 }
 
-input[type="radio"]:checked + label:after, 
-input[type="radio"]:not(:checked) + label:after {
-    left: 5px;
-    top: 5px;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    background-color: #e145a3;
-}
+// input[type="radio"]:checked + label:after, 
+// input[type="radio"]:not(:checked) + label:after {
+//     left: 5px;
+//     top: 5px;
+//     width: 10px;
+//     height: 10px;
+//     border-radius: 100%;
+//     background-color: #e145a3;
+// }
 
 input[type="checkbox"]:not(:checked) + label:after, 
 input[type="radio"]:not(:checked) + label:after {

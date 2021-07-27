@@ -141,8 +141,8 @@ input[type="checkbox"]:not(:checked) + label:after {
     width: 10px;
     height: 5px;
     border-radius: 1px;
-    border-left: 4px solid #e145a3;
-    border-bottom: 4px solid #e145a3;
+    border-left: 4px solid rgba(188, 156, 255, 1);
+    border-bottom: 4px solid rgba(188, 156, 255, 1);
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);

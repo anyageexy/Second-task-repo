@@ -1,26 +1,4 @@
 mixin checkbox-button(label, id) 
   .form-group
-    //- label= label
-    //-   input(type="checkbox")
     input(id = id type="checkbox")  
-    //- нуно задать ид
     label(class = "checkbox-label" for = id)= label
-    //- нужно задать for для ид
-
-//- mixin checkbox-button(label, data)
-//-   .form-check
-//-     input.form-check-input(
-//-       type='checkbox',
-//-       name= data.name,
-//-       value= data.value,
-//-       checked= data.checked,
-//-       id= data.value
-//-     )
-//-     label.form-check-label(
-//-       for= data.value
-//-     ) !{data.label}= label
-//- 
-//- mixin checkbox-button
-//-   label.v-checkbox
-//-         input(type="checkbox")
-//-         .v-label Label

@@ -1,11 +1,5 @@
-// function myFunction() {
-//     alert("тык");
-//     //document.getElementsByClassName("dropdown-list").classList.toggleClass('show');
-//     document.querySelector('.dropdown-list').classList.toggleClass('show');
-// }
-
 function my_Function_quests() {
-  var menu = document.querySelector('.dropdown-quests-list'); // Using a class instead, see note below.
+  var menu = document.querySelector('.dropdown-quests-list');
   var head = document.querySelector('.dropdown-quests-head');
   menu.classList.toggle('quests-show');
   head.classList.toggle('dropdown-quests-head-show');
@@ -31,9 +25,6 @@ function btn_clear_hidden(){///функция при скрытии кнопки
 }
 function main_counter_quests(){
   var head = document.querySelector('.quests-head-text');
-  // var counter_1 = document.querySelector('.span-count_1').innerHTML;
-  // var counter_2 = document.querySelector('.span-count_2').innerHTML;
-  // var counter_3 = document.querySelector('.span-count_3').innerHTML;
   head.innerHTML = string_quests_item();
   if(head.innerHTML.length > 20){
     head.innerHTML = head.innerHTML.substring(0, 20) + "...";

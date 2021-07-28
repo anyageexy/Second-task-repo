@@ -1,11 +1,5 @@
-// function myFunction() {
-//     alert("тык");
-//     //document.getElementsByClassName("dropdown-list").classList.toggleClass('show');
-//     document.querySelector('.dropdown-list').classList.toggleClass('show');
-// }
-
 function myFunction() {
-  var menu = document.querySelector('.dropdown-list'); // Using a class instead, see note below.
+  var menu = document.querySelector('.dropdown-list');
   var head = document.querySelector('.dropdown-head');
   menu.classList.toggle('show');
   head.classList.toggle('dropdown-head-show');
@@ -13,9 +7,6 @@ function myFunction() {
 
 function main_counter(){
   var head = document.querySelector('.head-text');
-  // var counter_1 = document.querySelector('.span-count_1').innerHTML;
-  // var counter_2 = document.querySelector('.span-count_2').innerHTML;
-  // var counter_3 = document.querySelector('.span-count_3').innerHTML;
   head.innerHTML = string_item_1() + ", " + string_item_2() + ", " + string_item_3();
   if(head.innerHTML.length > 20){
     head.innerHTML = head.innerHTML.substring(0, 20) + "...";
